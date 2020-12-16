@@ -57,7 +57,10 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer
-    .prompt(questions)
+    .prompt(questions).then((data) => {
+        const fileName = `${data.title.toLowerCase().split(' ').join('')}.md`;
+        console.log(fileName)
+    });
 
 }
 
