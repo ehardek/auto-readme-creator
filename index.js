@@ -35,7 +35,7 @@ const questions = [
         },
         {
             type: 'input',
-            name: 'contributing',
+            name: 'contribute',
             message: 'How does one contribute to your project?',
           },
           {
@@ -49,20 +49,25 @@ const questions = [
             message: 'What tests have you ran on your projects?',
           },
 ];
-
+const fileName = `README.md`;
 // function to write README file
-function writeToFile(fileName, data) {
-}
+function writeToFile(fileName, data) {    
+        console.log(fileName)
+        fs.writeFile("./printed-readme/"+fileName, data, function(error){
+            if (error){
+                return console.log(error);
+            }
+            console.log ("Your README was printed!")
+        })
+    };
+
 
 // function to initialize program
 function init() {
     inquirer
-    .prompt(questions).then((data) => {
-        const fileName = `${data.title.toLowerCase().split(' ').join('')}.md`;
-        console.log(fileName)
-    });
-
+    .prompt(questions).then(function(data){
+    writeToFile("README.md", generateMarkdown(data));
+})
 }
-
 // function call to initialize program
 init();
