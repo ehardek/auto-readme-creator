@@ -25,7 +25,7 @@ function generateMarkdown(data) {
   If you want to contribut
   ${data.contribute}
   ## General Questions
-    
+  https://github.com/${data.questions}   
 `;
 }
 

@@ -1,11 +1,11 @@
 
   
   
-  # test
+  # Test 
 
   ## Description
-  whatever
-##Table Of Contents
+  this is a project description
+ ## Table Of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Licenses](#licenses)
@@ -13,14 +13,14 @@
 
   ## Installation 
   How does the user install the project?
-  you install it 
+  just the package json
   ## Usage 
   How do the user actually use the generator?
-  use node.js 
+  use node js and follow the prompts
   ## Licenses
-  license 1
+   license 2
   ## Feedback
   If you want to contribut
-  add comments on the github
+  Follow the git hub link and add an issue. 
   ## General Questions
-
+    

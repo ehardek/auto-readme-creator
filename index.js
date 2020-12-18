@@ -52,7 +52,7 @@ const questions = [
 const fileName = `README.md`;
 // function to write README file
 function writeToFile(fileName, data) {    
-        console.log(fileName)
+        // console.log(fileName)
         fs.writeFile("./printed-readme/"+fileName, data, function(error){
             if (error){
                 return console.log(error);
